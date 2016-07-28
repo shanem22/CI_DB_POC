@@ -65,5 +65,4 @@
   <ItemGroup>
     <None Include="CD_DB_POC.publish.xml" />
   </ItemGroup>
-  <Import Project="..\packages\OctoPack.3.0.31\tools\OctoPack.targets" />
 </Project>
