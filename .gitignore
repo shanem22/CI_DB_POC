@@ -45,6 +45,8 @@ build/
 *.pidb
 *.log
 *.scc
+!*\OctoPack.Tasks.dll
+!*\NuGet.exe
 
 # Visual C++ cache files
 ipch/
