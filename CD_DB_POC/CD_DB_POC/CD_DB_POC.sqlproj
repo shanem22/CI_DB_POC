@@ -68,6 +68,6 @@
     <None Include="Deploy.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="CD_DB_POC_Test.publish.xml" />
+    <None Include="Test.publish.xml" />
   </ItemGroup>
 </Project>
