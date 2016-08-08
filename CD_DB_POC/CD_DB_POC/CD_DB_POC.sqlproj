@@ -69,5 +69,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Test.publish.xml" />
+    <None Include="CD_DB_POC.nuspec" />
   </ItemGroup>
 </Project>
