@@ -67,6 +67,7 @@
   <ItemGroup>
     <Build Include="CD_DB_POC\Tables\Person.sql" />
     <Build Include="CD_DB_POC\Tables\Sales.sql" />
+    <Build Include="CD_DB_POC\Tables\Orders.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CD_DB_POC.publish.xml" />
