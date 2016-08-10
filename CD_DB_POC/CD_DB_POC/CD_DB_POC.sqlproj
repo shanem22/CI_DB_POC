@@ -59,11 +59,14 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="CD_DB_POC" />
+    <Folder Include="CD_DB_POC\Tables" />
+    <Folder Include="CD_DB_POC\Programmability" />
+    <Folder Include="CD_DB_POC\Programmability\Stored Procedures" />
+    <Folder Include="CD_DB_POC\Programmability\Functions" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Person.sql" />
-    <Build Include="Sales.sql" />
-    <Build Include="Address.sql" />
+    <Build Include="CD_DB_POC\Tables\Person.sql" />
+    <Build Include="CD_DB_POC\Tables\Sales.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CD_DB_POC.publish.xml" />
