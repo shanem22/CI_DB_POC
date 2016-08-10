@@ -63,10 +63,7 @@
     <Folder Include="CD_DB_POC\Programmability" />
     <Folder Include="CD_DB_POC\Programmability\Stored Procedures" />
     <Folder Include="CD_DB_POC\Programmability\Functions" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="CD_DB_POC\Tables\Person.sql" />
-    <Build Include="CD_DB_POC\Tables\Sales.sql" />
+    <Folder Include="CD_DB_POC\Tables\Post Deploy" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CD_DB_POC.publish.xml" />
@@ -75,5 +72,26 @@
     </None>
     <None Include="Test.publish.xml" />
     <None Include="CD_DB_POC.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="CD_DB_POC\Tables\Post Deploy\PostDeploy.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CD_DB_POC\Tables\Post Deploy\dbo.Person.TAB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CD_DB_POC\Tables\Post Deploy\dbo.Sales.TAB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CD_DB_POC\Tables\dbo.Person.TAB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CD_DB_POC\Tables\dbo.Sales.TAB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CD_DB_POC\Tables\Post Deploy\dbo.Address.TAB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CD_DB_POC\Tables\dbo.Address.TAB.sql" />
   </ItemGroup>
 </Project>
