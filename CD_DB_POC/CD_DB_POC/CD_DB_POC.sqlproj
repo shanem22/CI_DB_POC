@@ -58,10 +58,12 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="CD_DB_POC" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Person.sql" />
     <Build Include="Sales.sql" />
+    <Build Include="Address.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CD_DB_POC.publish.xml" />
