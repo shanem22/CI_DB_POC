@@ -1,4 +1,4 @@
-﻿IF OBJECT_ID('dbo.Person') IS NULL
+﻿IF OBJECT_ID('dbo.Person') IS NULL --Comments
 BEGIN 
 	CREATE TABLE [dbo].[Person]
 	(
