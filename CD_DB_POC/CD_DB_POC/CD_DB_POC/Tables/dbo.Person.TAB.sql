@@ -1,4 +1,4 @@
-﻿IF OBJECT_ID('dbo.Person') IS NULL
+﻿IF OBJECT_ID('dbo.Person') IS NULL --Create Person Table (if not exists)
 BEGIN 
 	CREATE TABLE [dbo].[Person]
 	(
@@ -17,6 +17,7 @@ IF NOT EXISTS(SELECT 1 FROM sys.columns WHERE OBJECT_ID = OBJECT_ID('dbo.Person'
 ALTER TABLE [dbo].[Person]
 	ADD [Name] VARCHAR(50) NULL
 GO
+
 
 IF NOT EXISTS(SELECT 1 FROM sys.columns WHERE OBJECT_ID = OBJECT_ID('dbo.Person') AND Name = 'UTCCreationDate')
 ALTER TABLE [dbo].[Person]
