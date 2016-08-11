@@ -1,4 +1,4 @@
-﻿IF OBJECT_ID('dbo.Person') IS NULL --Create Person Table (if not exists)
+﻿IF OBJECT_ID('dbo.Person') IS NULL
 BEGIN 
 	CREATE TABLE [dbo].[Person]
 	(
