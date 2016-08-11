@@ -61,9 +61,8 @@
     <Folder Include="CD_DB_POC" />
     <Folder Include="CD_DB_POC\Tables" />
     <Folder Include="CD_DB_POC\Programmability" />
-    <Folder Include="CD_DB_POC\Programmability\Stored Procedures" />
+    <Folder Include="CD_DB_POC\Programmability\Stored_Procedures" />
     <Folder Include="CD_DB_POC\Programmability\Functions" />
-    <Folder Include="CD_DB_POC\Tables\Post Deploy" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CD_DB_POC.publish.xml" />
@@ -72,26 +71,28 @@
     </None>
     <None Include="Test.publish.xml" />
     <None Include="CD_DB_POC.nuspec" />
+    <None Include="CD_DB_POC\Programmability\Stored_Procedures\dbo.pr_Get_CurrentDate.PRC.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="CD_DB_POC\Tables\Post Deploy\PostDeploy.sql" />
+    <None Include="CD_DB_POC\Tables\dbo.Person.TAB.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CD_DB_POC\Tables\Post Deploy\dbo.Person.TAB.sql" />
+    <None Include="CD_DB_POC\Tables\dbo.Sales.TAB.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CD_DB_POC\Tables\Post Deploy\dbo.Sales.TAB.sql" />
+    <None Include="CD_DB_POC\Tables\dbo.Address.TAB.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CD_DB_POC\Tables\dbo.Person.TAB.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CD_DB_POC\Tables\dbo.Sales.TAB.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CD_DB_POC\Tables\Post Deploy\dbo.Address.TAB.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CD_DB_POC\Tables\dbo.Address.TAB.sql" />
+    <PostDeploy Include="CD_DB_POC\PostDeploy.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </PostDeploy>
   </ItemGroup>
 </Project>
