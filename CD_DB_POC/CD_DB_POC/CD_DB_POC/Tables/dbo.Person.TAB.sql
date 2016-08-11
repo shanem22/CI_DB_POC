@@ -2,16 +2,26 @@
 BEGIN 
 	CREATE TABLE [dbo].[Person]
 	(
-		[Id] INT NOT NULL
+		[Id] INT NOT NULL,
+		[Name] VARCHAR(50) NULL,
+		[UTCCreationDate] DATETIME NULL
 	)
 END
 GO
+
+
+IF NOT EXISTS(SELECT 1 FROM sys.columns WHERE OBJECT_ID = OBJECT_ID('dbo.Person') AND Name = 'Id')
+ALTER TABLE [dbo].[Person]
+	ADD [Id] INT NOT NULL
+GO
+
 
 IF NOT EXISTS(SELECT 1 FROM sys.objects WHERE name = 'pk_PersonID' AND type = 'PK')
 ALTER TABLE [dbo].[Person]
 WITH CHECK ADD CONSTRAINT pk_PersonID PRIMARY KEY CLUSTERED (
 		Id ASC)
 GO
+
 
 IF NOT EXISTS(SELECT 1 FROM sys.columns WHERE OBJECT_ID = OBJECT_ID('dbo.Person') AND Name = 'Name')
 ALTER TABLE [dbo].[Person]

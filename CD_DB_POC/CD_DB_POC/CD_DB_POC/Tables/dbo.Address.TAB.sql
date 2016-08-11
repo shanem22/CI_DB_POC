@@ -2,9 +2,15 @@
 BEGIN 
 	CREATE TABLE [dbo].[Address]
 	(
-		[Id] INT NOT NULL
+		[Id] INT NOT NULL,
+		[Name] VARCHAR(50) NULL
 	)
 END
+GO
+
+IF NOT EXISTS(SELECT 1 FROM sys.columns WHERE OBJECT_ID = OBJECT_ID('dbo.Address') AND Name = 'Id')
+ALTER TABLE [dbo].[Address]
+	ADD [Id] INT NOT NULL
 GO
 
 IF NOT EXISTS(SELECT 1 FROM sys.objects WHERE name = 'pk_AddressID' AND type = 'PK')
