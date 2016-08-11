@@ -22,6 +22,3 @@ IF NOT EXISTS(SELECT 1 FROM sys.columns WHERE OBJECT_ID = OBJECT_ID('dbo.Person'
 ALTER TABLE [dbo].[Person]
 	ADD [UTCCreationDate] DATETIME NULL
 GO
-
-
-:r .\dbo.Sales.TAB.sql
